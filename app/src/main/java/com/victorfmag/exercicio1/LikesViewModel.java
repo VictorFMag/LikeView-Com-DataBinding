@@ -28,16 +28,8 @@ public class LikesViewModel extends ViewModel {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome.setValue(nome);
-    }
-
     public MutableLiveData<String> getSobrenome() {
         return sobrenome;
-    }
-
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome.setValue(sobrenome);
     }
 
     public MutableLiveData<Integer> getImagemLikes() {

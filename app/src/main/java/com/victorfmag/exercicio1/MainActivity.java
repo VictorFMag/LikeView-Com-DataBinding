@@ -11,8 +11,6 @@ import androidx.databinding.BindingAdapter;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import com.victorfmag.exercicio1.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
