@@ -1,6 +1,7 @@
 package com.victorfmag.exercicio1;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
         binding.setLifecycleOwner(this);
         vm = new ViewModelProvider(this).get(LikesViewModel.class);
         binding.setVm(vm);
+    }
+
+    @BindingAdapter("android:src")
+    public static void setarImagem(ImageView iv, int valorImagem) {
+        iv.setImageResource(valorImagem);
     }
 }

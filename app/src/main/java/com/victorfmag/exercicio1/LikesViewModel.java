@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 public class LikesViewModel extends ViewModel {
     private MutableLiveData<String> nome = new MutableLiveData<>("Victor");
     private MutableLiveData<String> sobrenome = new MutableLiveData<>("Fernandes");
-    private MutableLiveData<Integer> imagemLikes = new MutableLiveData<>(R.drawable.baseline_thumb_up_24);
+    private MutableLiveData<Integer> imagemLikes = new MutableLiveData<>(R.drawable.baseline_thumb_up_24_white);
     private MutableLiveData<Integer> likes = new MutableLiveData<>(0);
 
     public void darLike() {
@@ -15,11 +15,11 @@ public class LikesViewModel extends ViewModel {
             likes.setValue(valorAtualLikes + 1);
 
             if (valorAtualLikes + 1 <= 3) {
-                imagemLikes.setValue(R.drawable.baseline_thumb_up_24);
+                imagemLikes.setValue(R.drawable.baseline_thumb_up_24_white);
             } else if (valorAtualLikes + 1 > 3 && valorAtualLikes + 1 <= 9) {
                 imagemLikes.setValue(R.drawable.heart);
             } else if (valorAtualLikes + 1 > 9) {
-                imagemLikes.setValue(R.drawable.baseline_local_fire_department_24);
+                imagemLikes.setValue(R.drawable.baseline_local_fire_department_24_white);
             }
         }
     }

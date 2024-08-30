@@ -22,29 +22,30 @@
             android:layout_height="28dp"
             android:layout_marginStart="77dp"
             android:layout_marginEnd="77dp"
-            android:layout_marginBottom="157dp"
+            android:layout_marginBottom="128dp"
             android:max="10"
+            android:progress="@{vm.likes}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:progress="@{vm.likes}" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_marginStart="140dp"
             android:layout_marginEnd="143dp"
             android:layout_marginBottom="34dp"
+            android:src="@{vm.imagemLikes}"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:src="@{vm.imagemLikes}" /><!-- Vinculando a imagem ao valor de imagemLikes -->
+            app:layout_constraintStart_toStartOf="parent" /><!-- Vinculando a imagem ao valor de imagemLikes -->
 
         <EditText
             android:id="@+id/textView"
             android:layout_width="268dp"
-            android:layout_height="41dp"
+            android:layout_height="45dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="100dp"
             android:text="@={vm.nome}"
@@ -54,7 +55,7 @@
         <EditText
             android:id="@+id/textView3"
             android:layout_width="268dp"
-            android:layout_height="41dp"
+            android:layout_height="45dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="208dp"
             android:text="@={vm.sobrenome}"
